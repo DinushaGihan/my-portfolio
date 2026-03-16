@@ -26,6 +26,20 @@ export default function Home() {
             Currently transitioning my IT expertise into modern web development.
           </p>
         </div>
+
+        {/* Tech Stack Section */}
+        <div className="mt-12 w-full max-w-4xl">
+          <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500 mb-4">
+            Tech Stack & Expertise
+          </h3>
+          <div className="flex flex-wrap gap-3">
+            {["Next.js", "TypeScript", "Tailwind CSS", "Networking", "QA Automation"].map((skill) => (
+              <span key={skill} className="px-4 py-2 bg-white border border-slate-200 rounded-full text-sm font-medium text-slate-700 shadow-sm">
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
     </main>
   );
