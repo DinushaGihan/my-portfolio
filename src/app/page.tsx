@@ -3,6 +3,7 @@ import StackCard from "@/components/StackCard";
 import ProjectCard from "@/components/ProjectCard"; // Make sure this is created!
 import { SiHtml5, SiCss, SiTailwindcss, SiReact, SiNextdotjs, SiJavascript, SiExpress, SiDocker } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
+import InsightCard from "@/components/InsightCard";
 
 export default function Home() {
   return (
@@ -66,10 +67,44 @@ export default function Home() {
               title="AquaTrace: Blockchain Supply Chain"
               description="A decentralized traceability system using Hyperledger Fabric. Implements smart contracts to ensure data integrity and transparency in seafood logistics."
               tags={["Hyperledger", "Node.js", "Blockchain", "Smart Contracts"]}
-              githubLink="https://github.com/DinushaGihan/aqua-trace" // Replace with actual link
-              demoLink="#" image={""}            />
+              githubLink="https://github.com/Group-Synthron/Module-02.git" 
+              demoLink="https://www.linkedin.com/posts/gihan-dasanayaka-085842232_traditional-supply-chains-and-their-activity-7383452265795371008-qGHB?utm_source=share&utm_medium=member_desktop&rcm=ACoAADolEeUBdzPSVzldyozi8yY37_yjnW0NqHc" 
+              image={"/projects/blockchain.jpg"}            
+            />
             
-            {/* We can add placeholders for Project 2 and 3 here */}
+            {/* Project 2: MedConnect */}
+            <ProjectCard 
+              title="MedConnect: Healthcare Suite"
+              description="A Flutter-based mobile app featuring a secure SOS system, real-time appointment booking, and role-based interfaces for patients and doctors."
+              tags={["Flutter", "Dart", "REST API", "Dio"]}
+              githubLink="https://github.com/DinushaGihan/iedu.git" 
+              demoLink="https://www.linkedin.com/in/gihan-dasanayaka-085842232/"
+              image="/projects/sos_2.jpg" 
+            />
+          </div>
+        </section>
+
+        <section id="insights">
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-slate-900">My Insights</h2>
+            <p className="text-slate-500 mt-2">Sharing my thoughts on technology, research, and engineering.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <InsightCard 
+              title="Bioinformatics for Beginners"
+              description="Bioinformatics is a fascinating field that blends biology, computer science, and mathematics to analyze and interpret the explosion of data produced by genomic sequencing."
+              date="July 2023" 
+              readTime="3 min read"
+              link="https://medium.com/@dinushagihan644/bioinformatics-for-beginners-610f2da4095a" 
+            />
+            
+            {/* Placeholder for future articles */}
+            <div className="border-2 border-dashed border-slate-200 rounded-2xl flex items-center justify-center p-8">
+              <p className="text-slate-400 italic text-sm text-center">
+                New article coming soon: &quot;Scalable Infrastructure with Docker&quot;
+              </p>
+            </div>
           </div>
         </section>
 
