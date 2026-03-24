@@ -31,14 +31,14 @@ export default function Hero() {
         </AnimatePresence>
       </div>
 
-      <h1 className="text-5xl font-extrabold text-slate-800 mb-8">
-        Meet Dinusha Gihan
+      <h1 className="text-5xl font-extrabold text-slate-800 mb-8 font-stencil tracking-tight">
+        Meet DINUSHA GIHAN
       </h1>
       
       <p className="max-w-2xl text-lg text-slate-600 leading-relaxed">
         A passionate and driven <strong>Software Engineer</strong> with an Honors degree in 
-        <strong> Information Technology</strong> from the <strong>University of Moratuwa</strong>...
-        {/* Add the rest of your description here */}
+        <strong> Information Technology</strong> from the <strong>University of Moratuwa </strong>
+        with industrial experience in Full stack software development. I&apos;m capable of learning and adapting to new technologies quickly.
       </p>
     </section>
   );

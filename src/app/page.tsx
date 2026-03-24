@@ -1,9 +1,11 @@
 import Hero from "@/components/Hero";
 import StackCard from "@/components/StackCard";
-import ProjectCard from "@/components/ProjectCard"; // Make sure this is created!
+import ProjectCard from "@/components/ProjectCard"; 
 import { SiHtml5, SiCss, SiTailwindcss, SiReact, SiNextdotjs, SiJavascript, SiExpress, SiDocker } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import InsightCard from "@/components/InsightCard";
+import Contact from "@/components/Contact";
+import AnimatedHeading from "@/components/AnimatedHeading";
 
 export default function Home() {
   return (
@@ -16,8 +18,10 @@ export default function Home() {
         {/* 2. Tech Stack Section */}
         <section id="tech-stack">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900">Technical Expertise</h2>
+            <div className="text-center mb-12">
+            <AnimatedHeading>Technical Expertise</AnimatedHeading>
             <p className="text-slate-500 mt-2">Specialized in modern web technologies and decentralized systems.</p>
+            </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -55,7 +59,9 @@ export default function Home() {
         <section id="projects">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
             <div>
-              <h2 className="text-3xl font-bold text-slate-900">Featured Projects</h2>
+              <div className="text-center mb-12">
+              <AnimatedHeading>Featured Projects</AnimatedHeading>
+              </div>
               <p className="text-slate-500 mt-2">A selection of my recent software engineering works.</p>
             </div>
             <div className="h-[1px] flex-grow bg-slate-200 mx-8 hidden md:block mb-4"></div>
@@ -86,7 +92,9 @@ export default function Home() {
 
         <section id="insights">
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-slate-900">My Insights</h2>
+            <div className="text-center mb-12">
+            <AnimatedHeading>My Insights</AnimatedHeading>
+            </div>
             <p className="text-slate-500 mt-2">Sharing my thoughts on technology, research, and engineering.</p>
           </div>
 
@@ -107,6 +115,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <Contact />
 
       </div>
     </main>
